@@ -568,7 +568,37 @@ footer div p {
         width: 375px;
     }
     header {
-        gap: 518.601px;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        align-self: stretch;
+        height: auto;
+        width: 100%;
+    }
+    .navbar ul {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        align-self: stretch;
+        height: auto;
+        width: 100%;
+        padding: 0px;
+        gap: 0;
+        margin: 0;
+    }
+    .navbar ul li {
+        width: 187.5px;
+        text-align: center;
+    }
+    .navbar ul li a:hover {
+        padding-top: 0px;
+        border-top: 0px;
     }
     .filter-bar {
         display: flex;
