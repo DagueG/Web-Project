@@ -26,7 +26,7 @@ p {
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     width: 1440px;
     flex-direction: column;
@@ -56,12 +56,6 @@ a {
     color: var(--main-bg-color)
 }
 
-@media (max-width: 1024px) {
-}
-
-@media (max-width: 767.98px) {
-}
-
 header {
     display: flex;
     justify-content: center;
@@ -81,6 +75,7 @@ nav ul {
     color: blue;
     padding-top: 10px;
     border-top: 2px solid blue;
+    cursor: pointer;
 }
 
 .logo-container {
@@ -163,6 +158,7 @@ nav ul {
     align-items: center;
     gap: 10px;
     border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
     
     border: 1px solid var(--main-color, #0065FC);
     background: var(--main-color, #0065FC);
@@ -190,6 +186,7 @@ nav ul {
 
 .filter:hover {
     background-color: #DEEBFF;
+    cursor: pointer;
 }
 
 .filter {
@@ -258,11 +255,18 @@ main {
     align-self: stretch;
 }
 
+.card {
+    cursor: pointer;
+}
+
+.offer-main .card .card-content{
+    padding: 0px 15px;
+}
+
 .offer-main .card {
     display: flex;
     padding-bottom: 15px;
     flex-direction: column;
-    align-items: center;
     gap: 4px;
     flex: 1 0 0;
     border-radius: 20px;
@@ -347,6 +351,7 @@ main {
 }
 
 .frame-sponso .card-content {
+    justify-content: space-between;
     display: flex;
     width: 246px;
     height: 136px;
@@ -490,4 +495,136 @@ footer div p {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+@media (max-width: 1024px) {
+    body {
+        width: 1024px;
+    }
+    header {
+        gap: 518.601px;
+    }
+    .filter-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        height: auto;
+    }
+    .filter-bar ul {
+        margin: 0;
+    }
+    .section-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+        align-self: stretch;
+    }    
+    .sponsored-offers {
+        gap: 20px;
+        width: auto;
+    }    
+    .sponsored-offers .frame-sponso{
+        flex-direction: row;
+        gap: 20px;
+    }
+    .frame-sponso .card {
+        flex: 1 0 0;
+        align-self: stretch;
+    }
+    .frame-sponso .card-content {
+        width: 183.111px;
+        align-self: stretch;
+    }
+    .sponsored-offers .populaires-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 545.825px;
+        align-self: stretch;
+    }
+    .frame-sponso .card img {
+        width: 91px;
+    }
+    .frame-activite {
+        height: auto;
+    }
+    .frame-activite .card {
+        height: auto;
+    }
+    .frame-activite .card img {
+        height: 200px;
+    }
+    .frame-activite .card .card-content {
+        height: 70px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    body {
+        width: 375px;
+    }
+    header {
+        gap: 518.601px;
+    }
+    .filter-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        height: auto;
+    }
+    .filter-bar ul {
+        margin: 0;
+    }
+    .section-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+        align-self: stretch;
+    }    
+    .sponsored-offers {
+        gap: 20px;
+        width: auto;
+    }    
+    .sponsored-offers .frame-sponso{
+        flex-direction: row;
+        gap: 20px;
+    }
+    .frame-sponso .card {
+        flex: 1 0 0;
+        align-self: stretch;
+    }
+    .frame-sponso .card-content {
+        width: 183.111px;
+        align-self: stretch;
+    }
+    .sponsored-offers .populaires-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 545.825px;
+        align-self: stretch;
+    }
+    .frame-sponso .card img {
+        width: 91px;
+    }
+    .frame-activite {
+        height: auto;
+    }
+    .frame-activite .card {
+        height: auto;
+    }
+    .frame-activite .card img {
+        height: 200px;
+    }
+    .frame-activite .card .card-content {
+        height: 70px;
+    }
 }
