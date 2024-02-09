@@ -621,7 +621,7 @@ footer div p {
     .filter-bar ul li{
         white-space: nowrap;
         font-size: 14px;
-        width: calc(50% - 6%);
+        width: 48%;
         padding: 4px 10px;
         gap: 3%;
     }
